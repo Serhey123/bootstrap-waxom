@@ -1,0 +1,659 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="./css/styles.css" />
+  <link rel="stylesheet" href="./css/bootstrap-grid.css" />
+  <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
+  <title>Waxom</title>
+</head>
+
+<body>
+  <header class="header">
+    <div class="container">
+      <nav class="navigation">
+        <a href="" class="logo">
+          <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="63.031"
+            height="55.125" viewBox="0 0 63.031 55.125">
+            <path
+              d="M413.108,50.713H402.6l5.254,9.191Zm-11.822.767-5.254,9.191H406.54Zm18.39,9.191-5.254-9.191-5.254,9.191h10.508ZM409.168,62.2l5.254,9.188,5.254-9.188H409.168Zm-13.136,0,5.254,9.188L406.54,62.2H396.032Zm-6.567,9.952h10.506l-5.253-9.187Zm36.778,0-5.253-9.187-5.252,9.187h10.5Zm-18.389-32.16-5.254,9.19h10.508ZM420.99,82.874l5.253-9.188h-10.5Zm-26.272,0,5.253-9.188H389.465Zm-11.821.767H393.4l-5.253-9.19Zm49.914,0-5.254-9.19-5.254,9.19h10.508ZM422.3,85.172l5.254,9.187,5.254-9.187H422.3Zm-13.135,0,5.254,9.187,5.254-9.187H409.168Zm-21.017,9.187,5.253-9.187H382.9Zm-11.82.769h10.5l-5.254-9.188Zm26.269,0h10.508l-5.254-9.188Zm13.138,0h10.5l-5.253-9.188Zm18.387-9.188-5.252,9.188h10.5Z"
+              transform="translate(-376.344 -40)" />
+          </svg>
+          <span class="logo-title">Waxom</span>
+        </a>
+        <ul class="navigation__list">
+          <li class="navigation__list-item">
+            <a href="#" class="navigation__link text">Home</a>
+          </li>
+          <li class="navigation__list-item">
+            <a href="#" class="navigation__link text">About Us</a>
+          </li>
+          <li class="navigation__list-item">
+            <a href="#" class="navigation__link text">Portfolio</a>
+          </li>
+          <li class="navigation__list-item">
+            <a href="#" class="navigation__link text">Features</a>
+          </li>
+          <li class="navigation__list-item">
+            <a href="#" class="navigation__link text">Blog</a>
+          </li>
+          <li class="navigation__list-item">
+            <a href="#" class="navigation__link text">Pricing</a>
+          </li>
+          <li class="navigation__list-item">
+            <a href="#" class="navigation__link text">Shortcodes</a>
+          </li>
+          <li class="navigation__list-item">
+            <a href="#" class="navigation__link text">Contact</a>
+          </li>
+        </ul>
+        <ul class="icon__list">
+          <li class="icon icon__cart">
+            <a href="" class="icon__link">
+              <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="18px"
+                height="24px">
+                <path fill="rgb(255, 255, 255)"
+                  d="M14.995,2.999 L13.496,2.999 C13.496,1.342 11.483,-0.002 8.999,-0.002 C6.514,-0.002 4.501,1.342 4.501,2.999 L3.002,2.999 C1.346,2.999 0.003,4.341 0.003,5.997 L0.003,20.995 C0.003,22.651 1.346,23.994 3.002,23.994 L14.995,23.994 C16.652,23.994 17.994,22.651 17.994,20.995 L17.994,5.997 C17.994,4.341 16.652,2.999 14.995,2.999 ZM8.999,1.498 C10.655,1.498 11.997,1.962 11.997,2.999 L6.000,2.999 C6.000,1.962 7.343,1.498 8.999,1.498 ZM16.495,20.995 C16.495,21.823 15.824,22.494 14.995,22.494 L3.002,22.494 C2.174,22.494 1.502,21.823 1.502,20.995 L1.502,19.495 L16.495,19.495 L16.495,20.995 ZM16.495,17.995 L1.502,17.995 L1.502,5.997 C1.502,5.169 2.174,4.497 3.002,4.497 L4.501,4.497 L4.501,8.998 L6.000,8.998 L6.000,4.497 L11.997,4.497 L11.997,8.998 L13.496,8.998 L13.496,4.497 L14.995,4.497 C15.824,4.497 16.495,5.169 16.495,5.997 L16.495,17.995 Z" />
+              </svg>
+            </a>
+          </li>
+          <li class="icon icon__search">
+            <a href="" class="icon__link">
+              <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24px"
+                height="24px">
+                <path fill="rgb(255, 255, 255)"
+                  d="M23.762,22.681 L17.569,16.586 C19.190,14.825 20.187,12.494 20.187,9.929 C20.186,4.443 15.668,-0.002 10.093,-0.002 C4.519,-0.002 0.001,4.443 0.001,9.929 C0.001,15.416 4.519,19.862 10.093,19.862 C12.502,19.862 14.711,19.028 16.446,17.644 L22.663,23.763 C22.966,24.062 23.458,24.062 23.761,23.763 C24.065,23.464 24.065,22.979 23.762,22.681 ZM10.093,18.334 C5.377,18.334 1.553,14.572 1.553,9.929 C1.553,5.288 5.377,1.525 10.093,1.525 C14.810,1.525 18.633,5.288 18.633,9.929 C18.633,14.572 14.810,18.334 10.093,18.334 Z" />
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+    <div class="slider">
+      <div class="container">
+        <div class="row align-items-center flex-column">
+          <p class="slider__subtitle col-12 col-md-7">
+            Unique and Modern Design
+          </p>
+          <h2 class="slider__title col-12 col-md-7">
+            Portfolio PSD Template
+          </h2>
+          <p class="slider__description text col-12 col-md-7">
+            Nam liber tempor cum soluta nobis eleifend option congue nihil
+            imperdiet doming id quod mazim placerat facer possim assum.
+          </p>
+          <button class="modal-btn col-6 col-md-4 col-xl-2">
+            Get Started
+          </button>
+        </div>
+        <div class="slider__btn-wrapper">
+          <button class="slider__btn-prev"></button>
+          <button class="slider__btn-next"></button>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main class="main">
+    <section class="services section">
+      <div class="container">
+        <ul class="services__list row">
+          <li class="services__list-item col-12 col-md-6 col-xl-3">
+            <svg class="services__icon">
+              <use href="./images/services-icon-sprite.svg#design"></use>
+            </svg>
+            <h3 class="services__title">Web & App Design</h3>
+            <p class="services__description text">
+              Nam liber tempor cum soluta nobis eleifend option congue nihil
+              imperdiet doming id quod mazim.
+            </p>
+          </li>
+          <li class="services__list-item col-12 col-md-6 col-xl-3">
+            <svg class="services__icon">
+              <use href="./images/services-icon-sprite.svg#develop"></use>
+            </svg>
+            <h3 class="services__title">Development</h3>
+            <p class="services__description text">
+              Lorem ipsum dolor sit amet, adipiscing elit, sed diam nonummy
+              nibh euismod tincidunt ut laoreet.
+            </p>
+          </li>
+          <li class="services__list-item col-12 col-md-6 col-xl-3">
+            <svg class="services__icon">
+              <use href="./images/services-icon-sprite.svg#custom"></use>
+            </svg>
+            <h3 class="services__title">Customization</h3>
+            <p class="services__description text">
+              Nam liber tempor cum soluta nobis eleifend option congue nihil
+              imperdiet doming id quod mazim.
+            </p>
+          </li>
+          <li class="services__list-item col-12 col-md-6 col-xl-3">
+            <svg class="services__icon">
+              <use href="./images/services-icon-sprite.svg#marketing"></use>
+            </svg>
+            <h3 class="services__title">Marketing</h3>
+            <p class="services__description text">
+              Nam liber tempor cum soluta nobis eleifend option congue nihil
+              imperdiet doming id quod mazim.
+            </p>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <section class="ideas">
+      <div class="container">
+        <div class="content__wrapper row justify-content-center">
+          <h2 class="section__title col-12 col-md-6">
+            Waxom is Realization of your Ideas.
+          </h2>
+          <p class="section__subtitle col-12 col-md-8">
+            Investigationes demonstraverunt lectores legere me lius quod ii
+            legunt saepius. Claritas est etiam processus dynamicus, qui
+            sequitur mutationem consuetudium.
+          </p>
+        </div>
+        <img src="./images/ideas-bg.png" alt="" class="ideas__img" />
+      </div>
+    </section>
+    <div class="textbox">
+      <div class="container">
+        <div class="row justify-content-between">
+          <div class="col-6 textbox__content-wrapper">
+            <h3 class="textbox__title">
+              <span class="textbox__title-logo">Waxom </span>Multipurpose
+              WordPress Theme
+            </h3>
+            <p class="textbox__content text">
+              Don't Forget to Rate the Template. Thanks so much!
+            </p>
+          </div>
+          <button class="textbox__btn col-4 col-md-3 col-xl-2">
+            Purchase now
+          </button>
+        </div>
+      </div>
+    </div>
+    <section class="projects section">
+      <div class="container">
+        <div class="content__wrapper row justify-content-center">
+          <h2 class="section__title col-12 col-md-6">Our Latest Projects.</h2>
+          <p class="section__subtitle col-12 col-md-8">
+            Investigationes demonstraverunt lectores legere me lius quod ii
+            legunt saepius. Claritas est etiam processus dynamicus, qui
+            sequitur mutationem consuetudium.
+          </p>
+        </div>
+        <div class="projects__btn-wrapper">
+          <button class="projects__btn text active">All</button>
+          <button class="projects__btn text">Web Design</button>
+          <button class="projects__btn text">Mobile App</button>
+          <button class="projects__btn text">Illustration</button>
+          <button class="projects__btn text">Photography</button>
+        </div>
+        <ul class="row projects__list">
+          <li class="col-12 col-md-6 col-xl-4 project article">
+            <div class="article__img-wrapper">
+              <img src="./images/project-1.png" alt="" class="article__img" />
+              <div class="overlay">
+                <ul class="link-list">
+                  <li class="link-list__item">
+                    <a href="#" class="link-list__item-link">
+                      <svg class="link__icon">
+                        <use href="./images/project-link-sprite.svg#link"></use>
+                      </svg>
+                      <span class="visually-hidden">link</span>
+                    </a>
+                  </li>
+                  <li class="link-list__item">
+                    <a href="#" class="link-list__item-link">
+                      <svg class="link__icon">
+                        <use href="./images/project-link-sprite.svg#lupa"></use>
+                      </svg>
+                      <span class="visually-hidden">search</span>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="project__content overlay__content">
+              <h3 class="article__name project__name">
+                Claritas Etiam Processus
+              </h3>
+              <p class="article__description project__description">
+                Photography, Nature
+              </p>
+            </div>
+          </li>
+          <li class="col-12 col-md-6 col-xl-4 project article">
+            <div class="article__img-wrapper">
+              <img src="./images/project-2.png" alt="" class="article__img" />
+              <div class="overlay">
+                <ul class="link-list">
+                  <li class="link-list__item">
+                    <a href="#" class="link-list__item-link">
+                      <svg class="link__icon">
+                        <use href="./images/project-link-sprite.svg#link"></use>
+                      </svg>
+                      <span class="visually-hidden">link</span>
+                    </a>
+                  </li>
+                  <li class="link-list__item">
+                    <a href="#" class="link-list__item-link">
+                      <svg class="link__icon">
+                        <use href="./images/project-link-sprite.svg#lupa"></use>
+                      </svg>
+                      <span class="visually-hidden">search</span>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="project__content overlay__content">
+              <h3 class="article__name project__name">Quam Nutamus Farum</h3>
+              <p class="article__description project__description">
+                Graphic Design, Mock-Up
+              </p>
+            </div>
+          </li>
+          <li class="col-12 col-md-6 col-xl-4 project article">
+            <div class="article__img-wrapper">
+              <img src="./images/project-3.png" alt="" class="article__img" />
+              <div class="overlay">
+                <ul class="link-list">
+                  <li class="link-list__item">
+                    <a href="#" class="link-list__item-link">
+                      <svg class="link__icon">
+                        <use href="./images/project-link-sprite.svg#link"></use>
+                      </svg>
+                      <span class="visually-hidden">link</span>
+                    </a>
+                  </li>
+                  <li class="link-list__item">
+                    <a href="#" class="link-list__item-link">
+                      <svg class="link__icon">
+                        <use href="./images/project-link-sprite.svg#lupa"></use>
+                      </svg>
+                      <span class="visually-hidden">search</span>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="project__content overlay__content">
+              <h3 class="article__name project__name">
+                Usus Legentis Videntur
+              </h3>
+              <p class="article__description project__description">
+                Photography, Holiday
+              </p>
+            </div>
+          </li>
+          <li class="col-12 col-md-6 col-xl-4 project article">
+            <div class="article__img-wrapper">
+              <img src="./images/project-4.png" alt="" class="article__img" />
+              <div class="overlay">
+                <ul class="link-list">
+                  <li class="link-list__item">
+                    <a href="#" class="link-list__item-link">
+                      <svg class="link__icon">
+                        <use href="./images/project-link-sprite.svg#link"></use>
+                      </svg>
+                      <span class="visually-hidden">link</span>
+                    </a>
+                  </li>
+                  <li class="link-list__item">
+                    <a href="#" class="link-list__item-link">
+                      <svg class="link__icon">
+                        <use href="./images/project-link-sprite.svg#lupa"></use>
+                      </svg>
+                      <span class="visually-hidden">search</span>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="project__content overlay__content">
+              <h3 class="article__name project__name">
+                Claritas Etiam Processus
+              </h3>
+              <p class="article__description project__description">
+                Photography, Nature
+              </p>
+            </div>
+          </li>
+          <li class="col-12 col-md-6 col-xl-4 project article">
+            <div class="article__img-wrapper">
+              <img src="./images/project-5.png" alt="" class="article__img" />
+              <div class="overlay">
+                <ul class="link-list">
+                  <li class="link-list__item">
+                    <a href="#" class="link-list__item-link">
+                      <svg class="link__icon">
+                        <use href="./images/project-link-sprite.svg#link"></use>
+                      </svg>
+                      <span class="visually-hidden">link</span>
+                    </a>
+                  </li>
+                  <li class="link-list__item">
+                    <a href="#" class="link-list__item-link">
+                      <svg class="link__icon">
+                        <use href="./images/project-link-sprite.svg#lupa"></use>
+                      </svg>
+                      <span class="visually-hidden">search</span>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="project__content overlay__content">
+              <h3 class="article__name project__name">Quam Nutamus Farum</h3>
+              <p class="article__description project__description">
+                Graphic Design, Mock-Up
+              </p>
+            </div>
+          </li>
+          <li class="col-12 col-md-6 col-xl-4 project article">
+            <div class="article__img-wrapper">
+              <img src="./images/project-6.png" alt="" class="article__img" />
+              <div class="overlay">
+                <ul class="link-list">
+                  <li class="link-list__item">
+                    <a href="#" class="link-list__item-link">
+                      <svg class="link__icon">
+                        <use href="./images/project-link-sprite.svg#link"></use>
+                      </svg>
+                      <span class="visually-hidden">link</span>
+                    </a>
+                  </li>
+                  <li class="link-list__item">
+                    <a href="#" class="link-list__item-link">
+                      <svg class="link__icon">
+                        <use href="./images/project-link-sprite.svg#lupa"></use>
+                      </svg>
+                      <span class="visually-hidden">search</span>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="project__content overlay__content">
+              <h3 class="article__name project__name">
+                Usus Legentis Videntur
+              </h3>
+              <p class="article__description project__description">
+                Photography, Holiday
+              </p>
+            </div>
+          </li>
+        </ul>
+        <div class="row justify-content-center">
+          <button class="load__btn col-8 col-md-4 col-xl-2">Load more</button>
+        </div>
+      </div>
+    </section>
+    <section class="device">
+      <div class="container">
+        <div class="row justify-content-between align-items-center">
+          <img src="./images/device-section.png" alt="" class="col-md-5 device__img" />
+          <div class="col-12 col-md-7 device__content-wrapper">
+            <h3 class="device__title">Excellent for Mobile Devices.</h3>
+            <p class="device__content text">
+              Qisi enim ad minim veniam, quis nostrud exerci tation
+              ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo
+              consequat. Investigationes demonstraverunt lectores legere me
+              lius quod ii legunt saepius claritas. Eodem modo typi, qui nunc
+              nobis videntur parum clari, fiant sollemnes in futurum.
+            </p>
+            <ul class="device__feature">
+              <li class="device__feature-item">
+                Nam liber tempor cum soluta nobis eleifend option;
+              </li>
+              <li class="device__feature-item">
+                Option congue nihil imperdiet doming id quod mazim placerat
+                facer;
+              </li>
+              <li class="device__feature-item">
+                Eodem modo typi, qui nunc nobis videntur parum futurum;
+              </li>
+              <li class="device__feature-item">
+                Investigationes demonstraverunt lectores.
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+    <div class="textbox counter">
+      <div class="container">
+        <ul class="row counter__list justify-content-center">
+          <li class="col-6 col-md-6 col-xl-2 counter__list-item counter__list-item_clients">
+            <p class="counter__list-number">3587</p>
+            <p class="counter__list-title">Satisfied Clients</p>
+          </li>
+          <li class="col-6 col-md-6 col-xl-2 counter__list-item counter__list-item_coffee">
+            <p class="counter__list-number">207</p>
+            <p class="counter__list-title">Cups of Coffe</p>
+          </li>
+          <li class="col-6 col-md-4 col-xl-2 counter__list-item counter__list-item_posts">
+            <p class="counter__list-number">2500</p>
+            <p class="counter__list-title">Blog Posts</p>
+          </li>
+          <li class="col-6 col-md-4 col-xl-2 counter__list-item counter__list-item_likes">
+            <p class="counter__list-number">873</p>
+            <p class="counter__list-title">Likes</p>
+          </li>
+          <li class="col-12 col-md-4 col-xl-2 counter__list-item counter__list-item_launched">
+            <p class="counter__list-number">900</p>
+            <p class="counter__list-title">We Launched</p>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <section class="posts section">
+      <div class="container">
+        <div class="content__wrapper row justify-content-center">
+          <h2 class="section__title col-12 col-md-6">Recent Posts.</h2>
+          <p class="section__subtitle col-12 col-md-8">
+            Investigationes demonstraverunt lectores legere me lius quod ii
+            legunt saepius. Claritas est etiam processus dynamicus, qui
+            sequitur mutationem consuetudium.
+          </p>
+        </div>
+        <ul class="row posts__list">
+          <li class="col-12 col-md-4 article">
+            <div class="article__img-wrapper">
+              <img src="./images/post-1.png" alt="" class="article__img" />
+              <ul class="date">
+                <li class="day">30</li>
+                <li class="month">Sep.</li>
+              </ul>
+              <div class="overlay"></div>
+            </div>
+            <div class="post__content overlay__content">
+              <h3 class="article__name post__name">
+                Lorem ipsum dolor sit amet.
+              </h3>
+              <p class="article__description post__description">
+                Claritas est etiam processus dynamicus, qui sequitur
+                mutationem consuetudium.
+              </p>
+              <a href="#" class="posts__link">Read More</a>
+            </div>
+          </li>
+          <li class="col-12 col-md-4 article">
+            <div class="article__img-wrapper">
+              <img src="./images/post-2.png" alt="" class="article__img" />
+              <ul class="date">
+                <li class="day">30</li>
+                <li class="month">Sep.</li>
+              </ul>
+              <div class="overlay"></div>
+            </div>
+            <div class="post__content overlay__content">
+              <h3 class="article__name post__name">
+                Lorem ipsum dolor sit amet.
+              </h3>
+              <p class="article__description post__description">
+                Claritas est etiam processus dynamicus, qui sequitur
+                mutationem consuetudium.
+              </p>
+              <a href="#" class="posts__link">Read More</a>
+            </div>
+          </li>
+          <li class="col-12 col-md-4 article">
+            <div class="article__img-wrapper">
+              <img src="./images/post-3.png" alt="" class="article__img" />
+              <ul class="date">
+                <li class="day">30</li>
+                <li class="month">Sep.</li>
+              </ul>
+              <div class="overlay"></div>
+            </div>
+            <div class="post__content overlay__content">
+              <h3 class="article__name post__name">
+                Lorem ipsum dolor sit amet.
+              </h3>
+              <p class="article__description post__description">
+                Claritas est etiam processus dynamicus, qui sequitur
+                mutationem consuetudium.
+              </p>
+              <a href="#" class="posts__link">Read More</a>
+            </div>
+          </li>
+        </ul>
+        <div class="posts__btn-wrapper">
+          <button class="prev"></button>
+          <button class="next"></button>
+        </div>
+      </div>
+    </section>
+    <section class="partners">
+      <div class="container">
+        <div class="row align-items-center">
+          <a href="#" class="col-3 partner-logo">
+            <img src="./images/logo-01.png" alt="" class="partner-img" />
+          </a>
+          <a href="#" class="col-3 partner-logo">
+            <img src="./images/logo-02.png" alt="" class="partner-img" />
+          </a>
+          <a href="#" class="col-3 partner-logo">
+            <img src="./images/logo-03.png" alt="" class="partner-img" />
+          </a>
+          <a href="#" class="col-3 partner-logo">
+            <img src="./images/logo-04.png" alt="" class="partner-img" />
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="footer">
+    <section class="footer-section section">
+      <div class="container">
+        <div class="row ">
+          <article class="about col-12 col-md-6 col-xl-3">
+            <a href="" class="logo footer__logo">
+              <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="63.031"
+                height="55.125" viewBox="0 0 63.031 55.125">
+                <path
+                  d="M413.108,50.713H402.6l5.254,9.191Zm-11.822.767-5.254,9.191H406.54Zm18.39,9.191-5.254-9.191-5.254,9.191h10.508ZM409.168,62.2l5.254,9.188,5.254-9.188H409.168Zm-13.136,0,5.254,9.188L406.54,62.2H396.032Zm-6.567,9.952h10.506l-5.253-9.187Zm36.778,0-5.253-9.187-5.252,9.187h10.5Zm-18.389-32.16-5.254,9.19h10.508ZM420.99,82.874l5.253-9.188h-10.5Zm-26.272,0,5.253-9.188H389.465Zm-11.821.767H393.4l-5.253-9.19Zm49.914,0-5.254-9.19-5.254,9.19h10.508ZM422.3,85.172l5.254,9.187,5.254-9.187H422.3Zm-13.135,0,5.254,9.187,5.254-9.187H409.168Zm-21.017,9.187,5.253-9.187H382.9Zm-11.82.769h10.5l-5.254-9.188Zm26.269,0h10.508l-5.254-9.188Zm13.138,0h10.5l-5.253-9.188Zm18.387-9.188-5.252,9.188h10.5Z"
+                  transform="translate(-376.344 -40)" />
+              </svg>
+              <span class="logo-title">Waxom</span>
+            </a>
+            <p class="footer__content about__content text">
+              Lorem ipsum dolor sit amet, consec- tetuer adipiscing elit, sed
+              diam nonummy nibh euismod tincidunt ut laoreet dolore magna
+              aliquam erat volutpat. Ut wisi enim ad minim veniam, quis
+              nostrud exerci suscipit lobortis claritatem.
+            </p>
+            <a href="#" class="posts__link about__link">Read More</a>
+          </article>
+          <article class="footer-post col-12 col-md-6 col-xl-3">
+            <a href="#" class="footer__title">Recent Posts</a>
+            <div class="footer-post__wrapper text">
+              <a href="#" class="footer-post__link">
+                <p class="footer-post_date footer__date">September 08, 2015</p>
+                <p class="footer-post_content footer__content">Lorem ipsum dolor sit amet, consec- tetuer adipiscing
+                  elit</p>
+              </a>
+              <a href="#" class="footer-post__link">
+                <p class="footer-post_date footer__date">September 08, 2015</p>
+                <p class="footer-post_content footer__content">Diam nonummy nibh euismod tincid- unt ut laoreet dolore
+                  magna</p>
+              </a>
+              <a href="#" class="footer-post__link">
+                <p class="footer-post_date footer__date">September 08, 2015</p>
+                <p class="footer-post_content footer__content">Claritas est etiam processus dynamic- us, qui sequitur
+                  mutationem per seac- ula quarta decima</p>
+              </a>
+            </div>
+          </article>
+          <article class="twitter col-12 col-md-6 col-xl-3">
+            <a href="#" class="footer__title">Our Twitter</a>
+            <div class="twitter__wrapper text">
+              <div class="twitter__content_wrapper">
+                <p class="twitter__content footer__content"> <a href="#" class="twitter-link">@waxom</a> Cum soluta
+                  nobis eleifend option congue nihil imperdiet doming</p>
+                <p class="twitter__date footer__date">3 mins ago</p>
+              </div>
+              <div class="twitter__content_wrapper">
+                <p class="twitter__content footer__content">Mirum est <a href="" class="twitter-link">#envato</a> notare
+                  quam littera gothica, quam nunc putamus parum anteposuerit litterarum</p>
+                <p class="twitter__date footer__date">5 hours ago</p>
+              </div>
+              <div class="twitter__content_wrapper">
+                <p class="twitter__content footer__content">Soluta nobis option <a href=""
+                    class="twitter-link">bit.ly/1Hniso7</a></p>
+                <p class="twitter__date footer__date">20 days ago</p>
+              </div>
+            </div>
+          </article>
+          <article class="widget col-12 col-md-6 col-xl-3">
+            <a href="#" class="footer__title">Dribbble Widget</a>
+            <ul class="widget__list row">
+              <li class="widget__list-item col-6">
+                <a href="#" class="widget__list-link"><img src="./images/widget-img-1.png" alt=""
+                    class="widget__list-img"></a>
+              </li>
+              <li class="widget__list-item col-6">
+                <a href="#" class="widget__list-link"><img src="./images/widget-img-2.png" alt=""
+                    class="widget__list-img"></a>
+              </li>
+              <li class="widget__list-item col-6">
+                <a href="#" class="widget__list-link"><img src="./images/widget-img-3.png" alt=""
+                    class="widget__list-img"></a>
+              </li>
+              <li class="widget__list-item col-6">
+                <a href="#" class="widget__list-link"><img src="./images/widget-img-4.png" alt=""
+                    class="widget__list-img"></a>
+              </li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+    <section class="copyright">
+      <div class="container">
+        <div class="copyright-wrapper">
+          <div class="copyright__left">
+            <a href="" class="copyright__link text">Copyright &copy; 2015 <span
+                class="copyright-author">Waxom</span></a>
+            <a href="" class="copyright__link text">Privacy Policy</a>
+            <a href="" class="copyright__link text">FAQ</a>
+            <a href="" class="copyright__link text">Support</a>
+          </div>
+          <div class="copyright__right">
+            <a href="" class="copyright__link text">Designed by <span class="copyright-author">ThemeFire</span></a>
+            <a href="" class="copyright__link text">Only on <span class="copyright-author">Envato Market</span></a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </footer>
+</body>
+
+</html>
